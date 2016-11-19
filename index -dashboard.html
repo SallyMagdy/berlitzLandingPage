@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,
+     initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="S.M.">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="Images/favicons/favicon.png" type="image/x-icon">
+    <link rel="icon" href="Images/favicons/favicon.png" type="image/x-icon">
+    <title>Berlitz Dashboard</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!--fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Harmattan" rel="stylesheet">
+
+    <!--<link href="https://fonts.googleapis.com/css?family=Lemonada" rel="stylesheet">-->
+    <link href="https://fonts.googleapis.com/css?family=El+Messiri" rel="stylesheet">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <!--animate-->
+    <link href="css/animate.css" rel="stylesheet">
+    <!--iCheck -->
+    <link href="css/iCheck/flat/blue.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/dashboardStyle.css" rel="stylesheet">
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+<nav class="navbar navbar-default navbar-fixed-top gradient" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"><img src="Images/Berlitz.Logo.less-01.png" width="10%"></a>
+    </div>
+    <ul class="nav navbar-nav navbar-right navbar-user">
+
+        <li class="dropdown user-dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> John Smith <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+                <li><a href="#"><i class="fa fa-user"></i> Profile</a></li>
+                <li><a href="#"><i class="fa fa-envelope"></i> Inbox <span class="badge">7</span></a></li>
+                <li><a href="#"><i class="fa fa-gear"></i> Settings</a></li>
+                <li class="divider"></li>
+                <li><a href="#"><i class="fa fa-power-off"></i> Log Out</a></li>
+            </ul>
+        </li>
+    </ul>
+        <!-- /.navbar-collapse -->
+</nav>
+
+
+        <div class="container">
+            <div class="row text-center">
+
+                    <h2>Welcome To Berlitz Dashboard</h2>
+
+            </div>
+                <div class="row hiddenTable" style="display: none;">
+                    <div class="col-md-12 well">
+                        <form>
+                            <i class="fa fa-times pull-right close"></i>
+                                    <div class="form-group">
+                                        <label for="title">Title</label>
+                                        <input type="text" placeholder="Title" class="btn-default form-control" id="title">
+                                    </div>
+                            <div class="form-group">
+                                <label for="description">Description</label>
+                                <textarea placeholder="Write the offers description" class="form-control" id="description" rows="10"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="img">Offer's Image</label>
+                                <input type="file" class="btn-default form-control" id="img">
+                            </div>
+                            <button class="btn btn-default pull-right btn-lg" style="line-height: 0;margin-right: 16px">Add</button>
+                        </form>
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-12">
+                    <div class="table-responsive">
+                        <button class="btn btn-default pull-right formBtn" style="margin-bottom:20px">Add New Offer</button>
+
+                        <table class="table table-responsive table-bordered table-hover tablesorter text-center">
+                            <thead>
+                            <tr>
+                                <th>Image</th>
+                                <th>Title</th>
+                                <th>Description</th>
+                                <th>Action</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td style="width:10%"><img src="Images/10%20(1).jpg" class="img-responsive"></td>
+                                <td>سجل فى مستوى واحصل على 50% خصم على المستوى التالى</td>
+                                <td>سجل فى مستوى واحصل على خصم 50% من المستوى التالى أو سجل فى مستوى واحد واحصل على خصم 15%</td>
+                                <td class="text-center" style="width:10%">
+                                    <div class="btn-group">
+                                        <button type=button" class="btn btn-success" title="Edit"><i class="fa fa-pencil"></i></button>
+                                        <button type="button" class="btn btn-danger" title="Delete"><i class="fa fa-trash-o"></i></button>
+                                    </div>
+
+                                </td>
+
+
+                             </tr>
+                            <tr>
+                                <td style="width:10%"><img src="Images/10%20(1).jpg" class="img-responsive"></td>
+                                <td>سجل فى مستوى واحصل على 50% خصم على المستوى التالى</td>
+                                <td>سجل فى مستوى واحصل على خصم 50% من المستوى التالى أو سجل فى مستوى واحد واحصل على خصم 15%</td>
+                                <td class="text-center" style="width:10%">
+                                    <div class="btn-group">
+                                        <button type=button" class="btn btn-success" title="Edit"><i class="fa fa-pencil"></i></button>
+                                        <button type="button" class="btn btn-danger" title="Delete"><i class="fa fa-trash-o"></i></button>
+                                    </div>
+
+                                </td>
+
+
+                            </tr>
+                            <tr>
+                                <td style="width:10%"><img src="Images/10%20(1).jpg" class="img-responsive"></td>
+                                <td>سجل فى مستوى واحصل على 50% خصم على المستوى التالى</td>
+                                <td>سجل فى مستوى واحصل على خصم 50% من المستوى التالى أو سجل فى مستوى واحد واحصل على خصم 15%</td>
+                                <td class="text-center" style="width:10%">
+                                    <div class="btn-group">
+                                        <button type=button" class="btn btn-success" title="Edit"><i class="fa fa-pencil"></i></button>
+                                        <button type="button" class="btn btn-danger" title="Delete"><i class="fa fa-trash-o"></i></button>
+                                    </div>
+
+                                </td>
+
+
+                            </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div><!-- /.row -->
+
+
+
+
+            </div>
+
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
+<script src="js/wow.min.js"></script>
+    <script src="js/icheck.min.js"></script>
+
+
+
+    <script>
+        new WOW().init();
+        $(".formBtn").click(function(){
+            $(".hiddenTable").toggle("slow");
+        });
+        $(".close").click(function(){
+            $(".hiddenTable").hide("slow");
+        });
+    </script>
+
+
+</body>
+
+</html>

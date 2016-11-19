@@ -1,0 +1,62 @@
+.navbar-brand>img {
+    width: 30%;
+}
+
+
+
+
+.table{
+    background-color:#fff;
+}
+
+
+h2{
+    color: #23238c;
+    font-weight:700;
+}
+
+.btn {
+    background: white;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 0;
+    margin-right: 1px;
+    font-size: 1em;
+    text-shadow: 0px -1px 0px #606060;
+}
+
+.btn-success{
+    background: green!important;
+    border-color:green;
+}
+.btn-danger{
+    background: red!important;
+    border-color:red;
+}
+.btn-group .btn{
+}
+
+form{
+    margin-top:20px;
+}
+
+.close{
+    margin-top: -23px;
+}
+
+@media (min-width: 767px){
+    .navbar {
+        padding: 3px 40px 0 0;
+    }
+    .container{
+        margin-top:100px;
+    }
+
+    .top-nav-collapse .navbar-brand>img {
+        width: 32%;
+        padding: 0px 0px 0px 25px;
+    }
+
+}
+
+
